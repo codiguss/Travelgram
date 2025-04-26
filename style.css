@@ -85,13 +85,66 @@ header {
         font-size: 1.4rem;
         line-height: 170%;
         color: var(--text-color-secondary);
+        width: 36rem;
       }
     
     }
 
     > .stats {
+      display: flex;
+      flex-direction: column;
       width: 28rem;
       height: auto;
+      font-size: 1.4rem;
+      gap: 1.6rem;
+      margin-top: 3.5rem;
+      
+      p {
+        color: var(--text-color-secondary);
+        display: flex;
+        align-items: center;
+
+        img {
+          display: flex;
+          flex-direction: column;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+main {
+
+  padding: 2.4rem 3.2rem;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  padding: 2.5rem 3.2rem;
+  justify-content: space-between;
+
+  font-size: 1.4rem;
+  color: var(--text-color-secondary);
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+    
+    a {
+      text-decoration: none;
+      color: var(--text-color-secondary);
     }
   }
 }
